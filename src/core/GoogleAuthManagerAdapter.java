@@ -2,7 +2,7 @@ package core;
 
 import Google.GoogleAuthManager;
 
-public class GoogleGoogleAuthManagerAdapter implements GoogleAuthService {
+public class GoogleAuthManagerAdapter implements GoogleAuthService {
     @Override
     public void Login(String email, String password) {
         GoogleAuthManager googleAuthManager = new GoogleAuthManager();

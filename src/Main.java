@@ -5,7 +5,7 @@ import business.concretes.EmailManager;
 import business.concretes.UserManager;
 import business.concretes.UserValidManager;
 import core.GoogleAuthService;
-import core.GoogleGoogleAuthManagerAdapter;
+import core.GoogleAuthManagerAdapter;
 import dataAccess.concretes.DatabaseDao;
 import entities.concretes.User;
 
@@ -21,7 +21,7 @@ public class Main {
 
         authService.Login("seylimemre@gmail.com", "1234");
 
-        GoogleAuthService googleAuthService = new GoogleGoogleAuthManagerAdapter();
+        GoogleAuthService googleAuthService = new GoogleAuthManagerAdapter();
         googleAuthService.Register(2,"Emre Kaan","Seylim","seylimemre@gmail.com","1234");
         googleAuthService.Login("seylimemre@gmail.com","1234");
     }
